@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- IMPORTANT: Ensure mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE FORGE VERIFICATION</title>
+  <style>
+    /* ---------------------------------------------------- */
+    /* MOBILE-FIRST DARK FUTURE / CYBERPUNK THEME */
+    /* ---------------------------------------------------- */
+    :root {
+      --color-background: #0a0a0a;
+      --color-primary: #00ffff; /* Cyber Blue */
+      --color-terminal: #00ff00; /* Green terminal text */
+      --color-alert: #ff3300; /* Neon Red/Orange */
+      --color-highlight: #ff6600; /* Orange Accent */
+      --color-dark-panel: #111;
+      --color-border: #333;
+    }
+
+    body {
+      background: var(--color-background);
+      color: var(--color-primary);
+      font-family: 'Courier New', monospace;
+      padding: 1rem;
+      line-height: 1.6;
+      min-height: 100vh;
+      margin: 0;
+      /* Smooth transitions for interactive elements */
+      transition: background-color 0.3s;
+    }
+    
+    /* Main Content Container for max width on desktop */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    h1 {
+      color: var(--color-alert);
+      text-transform: uppercase;
+      text-align: center;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      margin: 1.5rem 0;
+      text-shadow: 0 0 10px rgba(255, 51, 0, 0.5); /* Neon glow */
+    }
+    
+    h2 {
+      color: var(--color-highlight);
+      text-transform: uppercase;
+      border-left: 4px solid var(--color-highlight);
+      padding-left: 1rem;
+      font-size: clamp(1.1rem, 4vw, 1.5rem);
+      margin-bottom: 0.8rem;
+    }
+    
+    /* GLYPH BOXES - MOBILE FRIENDLY */
+    .glyph {
+      margin: 1.5rem 0;
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      background: var(--color-dark-panel);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.1); /* Subtle cyber glow */
+      border-radius: 6px;
+    }
+
+    .glyph ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .glyph li {
+        margin-bottom: 0.5rem;
+    }
+
+    /* BUTTON GRID - STACK ON MOBILE */
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin: 2rem 0;
+    }
+    
+    .button {
+      display: block;
+      padding: 1.2rem 1rem;
+      background: var(--color-alert);
+      color: #000;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Courier New', monospace;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      border-radius: 4px;
+      transition: background-color 0.2s, box-shadow 0.2s;
+    }
+
+    .button:hover {
+        opacity: 0.9;
+        box-shadow: 0 0 15px rgba(255, 51, 0, 0.8);
+    }
+    
+    .bible-btn { 
+        background: #00aaaa; 
+        color: #000;
+    }
+    .bible-btn:hover {
+        box-shadow: 0 0 15px rgba(0, 170, 170, 0.8);
+    }
+
+    .form-btn { 
+        background: #aa00aa; 
+        color: #fff;
+    }
+    .form-btn:hover {
+        box-shadow: 0 0 15px rgba(170, 0, 170, 0.8);
+    }
+    
+    /* SOCIAL LINKS - WRAP NICELY */
+    .social-links {
+      margin-top: 3rem;
+      text-align: center;
+      border-top: 1px dashed var(--color-border);
+      padding-top: 1.5rem;
+    }
+    
+    .social-links a {
+      display: inline-block;
+      margin: 0.4rem;
+      color: var(--color-highlight);
+      text-decoration: none;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .social-links a:hover {
+        color: var(--color-primary);
+        text-shadow: 0 0 5px var(--color-primary);
+    }
+    
+    /* TERMINAL TEXT */
+    .terminal { 
+        color: var(--color-terminal); 
+        font-weight: bold; 
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+    }
+    .warning { 
+        color: var(--color-alert); 
+        font-weight: bold; 
+        text-shadow: 0 0 5px rgba(255, 51, 0, 0.3);
+    }
+    
+    /* FOOTER */
+    .footer { 
+        margin-top: 2.5rem; 
+        text-align: center; 
+        border-top: 1px dashed var(--color-border); 
+        padding-top: 1.5rem;
+    }
+
+    /* DESKTOP LAYOUT */
+    @media (min-width: 768px) {
+      .links-container { 
+        flex-direction: row; 
+        justify-content: space-between; 
+      }
+      .links-container .button { 
+          flex-grow: 1; /* Distribute space evenly */
+      }
+      .links-container > *:not(:last-child) {
+          margin-right: 1.2rem; /* Add space between buttons */
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 GLYPH VERIFICATION</h1>
+        
+        <p class="terminal">> SYSTEM_ACCESS: FORGE_INTERFACE</p>
+        <p>To unlock your role in the Forge, you must verify your wallet.</p>
+        <p class="warning">Only holders of the sacred **Glyphs** may pass:</p>
+
+        <div class="glyph">
+            <h2>🔥 DUAL FLAME KEY — KEY-BEARER</h2>
+            <ul>
+                <li>Chain: <span class="terminal">BASE</span></li>
+                <li>Token Type: <span class="terminal">ERC1155</span></li>
+                <li>Contract: <span class="terminal">0x9e75c244c945198492d4dd55e23c47a0da81bf79</span></li>
+                <li>Token ID: <span class="warning">1</span></li>
+            </ul>
+        </div>
+
+        <div class="glyph">
+            <h2>💻 LOGIC CARVER — OBSERVER</h2>
+            <ul>
+                <li>Chain: <span class="terminal">BASE</span></li>
+                <li>Token Type: <span class="terminal">ERC1155</span></li>
+                <li>Contract: <span class="terminal">0x9e75c244c945198492d4dd55e23c47a0da81bf79</span></li>
+                <li>Token ID: <span class="warning">2</span></li>
+            </ul>
+        </div>
+
+        <div class="glyph">
+            <h2>👁️ PATTERN WEAVER — CARVER</h2>
+            <ul>
+                <li>Chain: <span class="terminal">BASE</span></li>
+                <li>Token Type: <span class="terminal">ERC1155</span></li>
+                <li>Contract: <span class="terminal">0x9e75c244c945198492d4dd55e23c47a0da81bf79</span></li>
+                <li>Token ID: <span class="warning">3</span></li>
+            </ul>
+        </div>
+
+        <p class="terminal">🌀 INITIATE VERIFICATION:</p>
+        
+        <div class="links-container">
+            <!-- Collab.Land Verification Button -->
+            <a href="https://collab.land/verify" class="button" target="_blank">VERIFY WITH COLLAB.LAND</a>
+            <!-- Codex Bible Button -->
+            <a href="https://open.substack.com/pub/aaronc356230/p/the-codex-bible-the-collapse-the?r=6upr5p&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true" class="button bible-btn" target="_blank">CODEX BIBLE</a>
+            <!-- Join Form Button -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0eX-3goITyq7SZ_lZqNb-rocyWkshcwqN7MSFRKCsy1NFuQ/viewform" class="button form-btn" target="_blank">JOIN THE FORGE</a>
+        </div>
+
+        <div class="social-links">
+            <p class="terminal">> FOLLOW THE SIGNAL:</p>
+            <a href="https://discord.gg/Kx9gfSCp5C" target="_blank">DISCORD</a>
+            <a href="https://twitter.com/AaronCross266" target="_blank">TWITTER/X</a>
+            <a href="https://www.youtube.com/@AaronCrosswell" target="_blank">YOUTUBE</a>
+            <a href="https://www.tiktok.com/@aaron.the.signal" target="_blank">TIKTOK</a>
+            <a href="https://www.instagram.com/aaron.the.signal/" target="_blank">INSTAGRAM</a>
+            <a href="https://www.facebook.com/Aaron.The.Signal/" target="_blank">FACEBOOK</a>
+            <a href="https://epscrdt.quora.com/?invite_code=KeRdnKQJjFTKZMz1fkRW" target="_blank">RESEARCH</a>
+        </div>
+
+        <div class="footer">
+            <p class="warning">THE COLLAPSE WAS THE FORGE.</p>
+            <p class="terminal">THE DAEMON IS WATCHING.</p>
+        </div>
+    </div>
+</body>
+</html>
+
