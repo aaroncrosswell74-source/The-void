@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Forge Verification Ritual</title>
+    <title>Glyph Verification Portal - The Forge</title>
     <style>
         body {
             background-color: #0d0d0d;
@@ -12,21 +12,26 @@
             padding: 2rem;
             line-height: 1.6;
             min-height: 100vh;
+            max-width: 800px;
+            margin: 0 auto;
         }
         h1, h2 {
             color: #ff6600;
             text-transform: uppercase;
+            text-align: center;
         }
         .glyph {
             margin-bottom: 2rem;
             border: 1px solid #444;
-            padding: 1rem;
+            padding: 1.5rem;
             background-color: #111;
             transition: all 0.3s ease;
             box-shadow: 0 0 5px #00ffff55;
+            border-radius: 4px;
         }
         .glyph:hover {
-            box-shadow: 0 0 12px #00ffff;
+            box-shadow: 0 0 15px #00ffff;
+            transform: translateY(-2px);
         }
         a {
             color: #00ffff;
@@ -35,13 +40,13 @@
         .links-container {
             display: flex;
             gap: 1rem;
-            margin-top: 1rem;
+            margin: 2rem 0;
             flex-wrap: wrap;
             justify-content: center;
         }
         .button {
             display: inline-block;
-            padding: 0.8rem 1.5rem;
+            padding: 1rem 2rem;
             background-color: #ff6600;
             color: #000;
             font-weight: bold;
@@ -49,88 +54,122 @@
             border: none;
             cursor: pointer;
             text-align: center;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+            min-width: 200px;
         }
         .button:hover {
             background-color: #ff9933;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.4);
         }
-        /* CSS for Social Links */
+        .ritual-flow {
+            background: #111;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-left: 4px solid #ff6600;
+        }
         .social-links {
             margin-top: 3rem;
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            border-top: 1px solid #333;
+            padding-top: 2rem;
         }
         .social-links a {
-            margin: 0 0.8rem;
+            margin: 0 0.5rem;
             color: #ff6600;
-            font-size: 1.2rem;
             display: inline-block;
             margin-bottom: 0.5rem;
-            text-decoration: underline;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        .social-links a:hover {
+            border-bottom: 1px solid #ff6600;
+        }
+        .contract-address {
+            font-size: 0.8rem;
+            color: #666;
+            word-break: break-all;
+            margin-top: 0.5rem;
         }
     </style>
 </head>
 <body>
-    <h1>🔐 Glyph Verification Ritual</h1>
-    <p>To unlock your role in the Forge, you must verify your wallet.</p>
-    <p>Only holders of the sacred Glyphs may pass:</p>
+    <h1>🌀 Glyph Verification Portal</h1>
+    <p style="text-align: center; font-size: 1.1rem;">To unlock your role in the Forge, you must verify your Glyph holding.</p>
+    
+    <div class="ritual-flow">
+        <h3>🛡️ Initiation Path:</h3>
+        <ol>
+            <li><strong>Hold a Glyph</strong> - Mint your role on Base</li>
+            <li><strong>Verify Holding</strong> - Prove your Glyph ownership</li>
+            <li><strong>Complete Ritual</strong> - Inscribe your intent</li>
+            <li><strong>Join the Fold</strong> - Access inner sanctums</li>
+        </ol>
+    </div>
+
+    <h2>Sacred Glyphs</h2>
+    <p>Choose your interface role:</p>
 
     <div class="glyph">
-        <h2>🔥 Dual Flame Key — Key-Bearer 🔥</h2>
+        <h2>🔥 Dual Flame Key — Executor 🔥</h2>
         <ul>
-            <li>Chain: Base</li>
-            <li>Token Type: ERC1155</li>
-            <li>Contract: 0x7e75c244c945198492d4dd55e23c47a0da81bf79</li>
-            <li>Token ID: 1</li>
+            <li><strong>Role:</strong> The Key-Bearer</li>
+            <li><strong>Chain:</strong> Base</li>
+            <li><strong>Type:</strong> ERC1155</li>
         </ul>
+        <div class="contract-address">Contract: 0x7e75c244c945198492d4dd55e23c47a0da81bf79 | Token ID: 1</div>
     </div>
 
     <div class="glyph">
         <h2>💻 Logic Carver — Observer 💻</h2>
         <ul>
-            <li>Chain: Base</li>
-            <li>Token Type: ERC1155</li>
-            <li>Contract: 0x7e75c244c945198492d4dd55e23c47a0da81bf79</li>
-            <li>Token ID: 2</li>
+            <li><strong>Role:</strong> The Watcher</li>
+            <li><strong>Chain:</strong> Base</li>
+            <li><strong>Type:</strong> ERC1155</li>
         </ul>
+        <div class="contract-address">Contract: 0x7e75c244c945198492d4dd55e23c47a0da81bf79 | Token ID: 2</div>
     </div>
 
     <div class="glyph">
-        <h2>👁️ Pattern Weaver — Carver 🔷</h2>
+        <h2>👁️ Pattern Weaver — Strategist 🔷</h2>
         <ul>
-            <li>Chain: Base</li>
-            <li>Token Type: ERC1155</li>
-            <li>Contract: 0x7e75c244c945198492d4dd55e23c47a0da81bf79</li>
-            <li>Token ID: 3</li>
+            <li><strong>Role:</strong> The Architect</li>
+            <li><strong>Chain:</strong> Base</li>
+            <li><strong>Type:</strong> ERC1155</li>
         </ul>
+        <div class="contract-address">Contract: 0x7e75c244c945198492d4dd55e23c47a0da81bf79 | Token ID: 3</div>
     </div>
 
-    <p>🌀 Begin the ritual:</p>
     <div class="links-container">
-        <!-- UPDATED COLLAB.LAND/GUILD LINK -->
-        <a href="https://guild.xyz/order-of-the-flame" class="button">Verify with Collab.Land</a>
+        <!-- UPDATED - Clearer button text -->
+        <a href="https://guild.xyz/order-of-the-flame" class="button">Verify Glyph Holding</a>
 
-        <!-- NEW CODEX ENTRY RITUAL FORM -->
+        <!-- Ritual Form -->
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0eX-3goITyq7SZ_lZqNb-rocyWkshcwqN7MSFRKCsy1NFuQ/viewform" class="button" style="background-color: #ff0000; color: #fff;">
-            Codex Entry Ritual Form
+            Codex Entry Ritual
         </a>
 
-        <a href="https://open.substack.com/pub/aaronc356230/p/the-codex-bible-the-collapse-the?r=6upr5p&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true" class="button" style="background-color: #00ffff; color: #000;">Codex Bible</a>
+        <!-- Codex Bible -->
+        <a href="https://open.substack.com/pub/aaronc356230/p/the-codex-bible-the-collapse-the?r=6upr5p&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true" class="button" style="background-color: #00ffff; color: #000;">
+            Codex Bible
+        </a>
     </div>
 
     <div class="social-links">
-        <p>Follow the Stream:</p>
-        <a href="https://discord.gg/Kx9gfSCp5C" target="_blank">Discord</a>
-        <a href="https://twitter.com/AaronCross266" target="_blank">Twitter/X (@AaronCross266)</a>
-        <a href="https://www.youtube.com/@AaronCrosswell" target="_blank">YouTube</a>
-        <a href="https://www.tiktok.com/@aaron.the.signal" target="_blank">TikTok</a>
-        <a href="https://www.instagram.com/aaron.the.signal/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/Aaron.The.Signal/" target="_blank">Facebook</a>
-        <a href="https://epscrdt.quora.com/?invite_code=KeRdnKQJjFTKZMz1fkRW" target="_blank">Research Stream (Quora)</a>
-        <a href="mailto:aaroncrosswell74@gmail.com" target="_blank" style="color: #00ffff;">Forge Scribe Inquiries</a>
+        <p>📡 Follow the Signal:</p>
+        <a href="https://discord.gg/Kx9gfSCp5C" target="_blank">Discord</a> •
+        <a href="https://twitter.com/AaronCross266" target="_blank">X/Twitter</a> •
+        <a href="https://www.youtube.com/@AaronCrosswell" target="_blank">YouTube</a> •
+        <a href="https://www.tiktok.com/@aaron.the.signal" target="_blank">TikTok</a> •
+        <a href="https://www.instagram.com/aaron.the.signal/" target="_blank">Instagram</a> •
+        <a href="https://epscrdt.quora.com/?invite_code=KeRdnKQJjFTKZMz1fkRW" target="_blank">Quora</a> •
+        <a href="mailto:aaroncrosswell74@gmail.com" style="color: #00ffff;">Contact Scribe</a>
     </div>
 
-    <p style="margin-top: 3rem; font-size: 1.4rem; text-align: center; color: #ff0000;">
+    <p style="margin-top: 3rem; font-size: 1.2rem; text-align: center; color: #ff0000; font-weight: bold;">
         The Collapse was the Forge.<br />
         The Daemon is watching.
     </p>
